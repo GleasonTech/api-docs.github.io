@@ -1,0 +1,33 @@
+# ----
+# Site
+
+title: RiskLimiter Public API Documentation
+description: RiskLimiter Public API documentation allows clients to programatically interact with the RiskLimiter Inspection Platform.
+url: https://example.com
+google_analytics_key:
+permalink: pretty
+
+collections:
+  documentation:
+    title: Reporter Webhooks
+    position: 1
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - get
+  - put
+  - delete
+  - post
