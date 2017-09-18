@@ -64,7 +64,7 @@
 						</li>
 					
 						<li>
-							<a href="/#documentationauthentication">
+							<a href="/#documentationpayloads">
 								Payloads
 								
 							</a>
@@ -94,23 +94,6 @@
 					
 						
 						
-						"documentation-authentication": {
-							"id": "documentation-authentication",
-							"title": "Payloads",
-							"category": "documentation",
-							"description": "",
-		  				"type": "",
-							"url": "/#documentationauthentication",
-							"content": "Each event type has a specific payload format with the relevant event information. All event payloads mirror the payloads for the Event types, with the exception of the original create event, which has a more detailed webhook payload.\n\nIn addition to the fields documented for each event, webhook payloads include the user who performed the event (sender) as well as the organization (organization) and/or report which the event occurred on.\n\nDelivery Headers\n\n\n  \n    \n      Name\n      Description\n    \n  \n  \n    \n      X-RiskLimiter-Event\n      Name of the event that triggered this delivery.\n    \n    \n      X-RiskLimiter-Signature\n      HMAC hex digest of the payload, using the hook’s secret as the key (if configured).\n    \n    \n      X-RiskLimiter-Delivery\n      Unique ID for this delivery.\n    \n  \n\n\nAlso, the User-Agent for the requests will have the prefix RiskLimiter-Hookshot/."
-						}
-						
-					
-				
-			
-				
-					
-						,
-						
 						"documentation-events": {
 							"id": "documentation-events",
 							"title": "Events",
@@ -136,6 +119,23 @@
 		  				"type": "",
 							"url": "/#documentationgetting_started",
 							"content": "Webhooks allow you to build or set up apps which subscribe to certain events on the RiskLimiter Inspection Suite. When one of those events is triggered, we’ll send a HTTP POST payload to the webhook’s configured URL.\n\nEach webhook can be installed on an organization or specific RiskLimiter Report. Once installed, they will be triggered each time one or more subscribed events occur on that organization or Report.\n\nYou can create up to 5 webhooks for each event on each installation target (specific organization or specific Report)."
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-payloads": {
+							"id": "documentation-payloads",
+							"title": "Payloads",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationpayloads",
+							"content": "Each event type has a specific payload format with the relevant event information. All event payloads mirror the payloads for the Event types, with the exception of the original create event, which has a more detailed webhook payload.\n\nIn addition to the fields documented for each event, webhook payloads include the user who performed the event (sender) as well as the organization (organization) and/or report which the event occurred on.\n\nDelivery Headers\n\n\n  \n    \n      Name\n      Description\n    \n  \n  \n    \n      X-RiskLimiter-Event\n      Name of the event that triggered this delivery.\n    \n    \n      X-RiskLimiter-Signature\n      HMAC hex digest of the payload, using the hook’s secret as the key (if configured).\n    \n    \n      X-RiskLimiter-Delivery\n      Unique ID for this delivery.\n    \n  \n\n\nAlso, the User-Agent for the requests will have the prefix RiskLimiter-Hookshot/."
 						}
 						
 					
